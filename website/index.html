@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type ="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="utf-8">
+    <title>林亦謙的個人網頁</title>
+    <script>
+        function timenow(){
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        hour = date.getHours();
+        min = date.getMinutes();
+        sec = date.getSeconds();
+        document.getElementById("current_date").innerHTML = month + "-" + day + "-" + year
+         +" "+hour + ":" + min + ":" + sec;
+        }
+        setInterval("timenow()",300);
+    </script>
+  </head>
+  <body bgcolor="#ebf5fa">
+    <h1>林亦謙的個人網頁</h1>
+    <img src="images/IMG_5943.JPG" alt="我的照片" width="500" height="800"
+    style ="position:absolute;left:800px;top:0px" >
+    <h2>我的基本資料</h2>
+    <p class="box">於民國92年6月24日出生於台北，是三個小孩中的長子，
+    在小學三年級以前都生活在芝山岩附近，後來因為父親工作關係
+    全家搬至新竹，國中考上<a href="https://web.gwjh.hc.edu.tw/nss/p/index">光武國中</a>的科資班，
+    開始發現自己對於科學的興趣，高中就讀<a href="https://www.nehs.hc.edu.tw/">竹科實驗高中</a>科學班，
+    大學幸運地考上了<a href="https://web.ee.ntu.edu.tw/">國立台灣大學電機工程學系</a>，對於未來充滿期待。</p>
+    <h2>更多關於我的事</h2>
+    <h3>興趣</h3>
+    <ul>
+        <li>運動：騎單車，曾經三次單車環島過，<a href="https://www.giantcyclingworld.com/travel/&p_language_id=2">捷安特環島</a></li>
+        <li>電影：漫威英雄片：<a href="https://www.marvel.com/">MARVEL</a></li>
+        <li>動漫：<a href="https://ani.gamer.com.tw/">巴哈追番去</a></li>
+    </ul>
+    <p>背景鋼琴曲：<a href="https://www.youtube.com/watch?v=7maJOI3QMu0">
+        River Flows in you
+    </a></p>
+    <audio id="audioElement" controls autoplay loop>
+        <source src="audio/River Flows in You.mp3" type="audio/mpeg" >
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <div id="current_date"></p>
+  </body>
+</html>

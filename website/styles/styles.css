@@ -1,0 +1,18 @@
+li{
+    list-style-type: square;
+}
+h1{
+    color:midnightblue;
+}
+a:link{
+    color :rgb(0, 145, 255);
+}
+a:visited{
+    color:red;
+}
+.box {
+    padding: 10px;
+    margin: 10px;
+    width: 750px;
+    height: 80px;
+  }
